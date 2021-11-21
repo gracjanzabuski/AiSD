@@ -1,5 +1,5 @@
 from typing import Any
-from temp import LinkedList, Node
+from zad1 import LinkedList, Node
 
 
 class Stack:
