@@ -1,5 +1,6 @@
 from typing import Any
 
+
 class Node:
     def __init__(self, value: Any = None):
         self.value: Any = value
@@ -35,7 +36,6 @@ class LinkedList:
             self.head = node
             self.tail = node
 
-
     def node(self, at: int) -> Node:
         current = self.head
         counter = 0
@@ -44,7 +44,6 @@ class LinkedList:
                 return current
             counter += 1
             current = current.next
-
 
     def insert(self, value: Any, after: Node) -> None:
         node = Node(value)
@@ -61,7 +60,6 @@ class LinkedList:
             temp2 = self.head
             self.head = self.head.next
             return temp2.value
-
 
     def remove_last(self) -> Any:
         if self.head is not None:
@@ -86,7 +84,6 @@ class LinkedList:
         else:
             after.next = None
             self.tail = after
-
 
     def print(self):
         node = self.head
