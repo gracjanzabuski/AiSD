@@ -29,15 +29,15 @@ class Stack:
 
 stack = Stack()
 assert len(stack) == 0
-print(f'stack = \n{stack}\ntest: ok')
+print(stack)
 
 stack.push(3)
 stack.push(10)
 stack.push(1)
 assert len(stack) == 3
-print(f'stack = \n{stack}\ntest: ok')
+print(stack)
 
 top_value = stack.pop()
 assert top_value == 1
 assert len(stack) == 2
-print(f'stack = \n{stack}\ntest: ok')
+print(stack)
