@@ -8,7 +8,6 @@ class Queue:
     def __init__(self):
         self._storage = LinkedList()
 
-
     def __repr__(self):
         output = []
         node = self._storage.head
@@ -23,7 +22,6 @@ class Queue:
     def __str__(self):
         str_out = map(str, self.__repr__())
         return ", ".join(str_out)
-
 
     def peek(self) -> Any:
         return self._storage.head.value
